@@ -1,0 +1,91 @@
+%a-link {
+    color: black;
+    text-decoration: none;
+    padding-right:2rem ;
+}
+
+
+.title.info {
+    display: flex;
+    align-items: center;
+    h3 {
+        padding: 1rem;
+
+
+        a {
+            @extend %a-link;
+            font-size: 1.7rem;
+        }
+    }
+
+    h4 {
+        padding: 1rem;
+
+        a {
+            @extend %a-link;
+            font-size: large;
+        }
+    }
+}
+
+.items-info {
+    // display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+
+    .infoimage {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        a {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            border: 1px solid #e5e5e5;
+
+            img {
+                width: 75%;
+            }
+        }
+
+    }
+}
+
+%display-box {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.fotertext {
+
+    .name {
+        @extend %display-box;
+    }
+    .buyNo {
+        @extend %display-box;
+        color: #ff3f6c;
+
+        h1 {
+            text-decoration: line-through;
+        }
+    }
+
+    .buyYes {
+        @extend %display-box;
+        color: #4caf50;
+    }
+}
+
+.items-info .owl-nav , .items-info .owl-dots{
+    display: none;
+}
+
+.items-info .owl-stage-outer {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}

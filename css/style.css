@@ -1,0 +1,673 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Light.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Light.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Light.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Medium.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Medium.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Medium.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Thin.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Thin.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Thin.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Black.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Black.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Black.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+.slider .slider-main .title-slider, .slider .slider-main .button a {
+  border-radius: 0.4rem;
+}
+
+.navigation {
+  background-color: #1e212d;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .nav-r ul, .navigation .nav-l ul {
+  display: flex;
+}
+.navigation .nav-r ul li, .navigation .nav-l ul li {
+  padding: 1em;
+}
+.navigation .nav-r ul li a, .navigation .nav-l ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 200ms;
+}
+.navigation .nav-r ul li a:hover, .navigation .nav-l ul li a:hover {
+  opacity: 0.5;
+}
+
+.activ {
+  background-color: #333333;
+  padding: 1rem;
+}
+
+.MenueAndSerche {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.MenueAndSerche .M-Serch {
+  display: flex;
+  position: relative;
+}
+.MenueAndSerche .M-Serch .menue {
+  border-radius: 0.2rem;
+  background-color: #0095da;
+  display: flex;
+  align-items: center;
+}
+.MenueAndSerche .M-Serch .menue i {
+  display: flex;
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+.MenueAndSerche .M-Serch .menue a {
+  padding: 0.7rem 0rem 0.7rem 0.9rem;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MenueAndSerche .M-Serch .serchbar {
+  display: flex;
+  margin-right: 1rem;
+}
+.MenueAndSerche .M-Serch .serchbar form {
+  display: flex;
+}
+.MenueAndSerche .M-Serch .serchbar form input {
+  width: 16rem;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  padding-right: 1rem;
+  border-bottom-right-radius: 0.2rem;
+}
+.MenueAndSerche .M-Serch .serchbar form .search-click {
+  background-color: #a5a5a5;
+  padding: 0rem;
+  width: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MenueAndSerche .M-Serch .serchbar form .search-click a {
+  margin-bottom: 0.2rem;
+}
+.MenueAndSerche .M-Serch .serchbar form .search-click a i {
+  color: #f3f3f3;
+}
+.MenueAndSerche .Buy {
+  display: flex;
+  background-color: #4caf50;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+.MenueAndSerche .Buy .icon-buy i {
+  opacity: 0.3;
+  background-color: white;
+  padding: 0.4rem 0.7rem 0.7rem 0.7rem;
+  margin-left: 0.5rem;
+}
+.MenueAndSerche .Buy .Buy-number {
+  background-color: white;
+  border-radius: 50%;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  padding-top: 0.1rem;
+}
+
+.slider {
+  background-image: url(../image/FULL-HD-NATURE-PHO2TOS-1.jpg);
+  height: 25rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.slider .slider-main .button {
+  display: flex;
+  margin-right: 10rem;
+}
+.slider .slider-main .button a {
+  padding: 0.7rem 1rem;
+  background-color: #038a6f;
+  color: white;
+  text-decoration: none;
+}
+.slider .slider-main .title-slider {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10rem;
+  background-color: #038a6f;
+  padding: 1rem;
+  margin-top: 0.7rem;
+  color: white;
+}
+.slider .slider-main .title-slider .text-titele {
+  margin-left: 5rem;
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  background-color: white;
+  border: none;
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+}
+.owl-dots .owl-dot {
+  background-color: #ececec;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  margin-right: 0.3rem;
+}
+
+.slider-ss {
+  position: relative;
+}
+.slider-ss .owl-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 49%;
+  opacity: 0.5;
+}
+.slider-ss .owl-dots {
+  position: absolute;
+  bottom: 3.2rem;
+  right: 49%;
+  opacity: 0.5;
+}
+.slider-ss .owl-dots .active {
+  background-color: dimgray;
+}
+
+.slider-ss {
+  overflow: hidden;
+}
+
+.title.info h4 a, .title.info h3 a {
+  color: black;
+  text-decoration: none;
+  padding-right: 2rem;
+}
+
+.title.info {
+  display: flex;
+  align-items: center;
+}
+.title.info h3 {
+  padding: 1rem;
+}
+.title.info h3 a {
+  font-size: 1.7rem;
+}
+.title.info h4 {
+  padding: 1rem;
+}
+.title.info h4 a {
+  font-size: large;
+}
+
+.items-info {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.items-info .infoimage {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.items-info .infoimage a {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid #e5e5e5;
+}
+.items-info .infoimage a img {
+  width: 75%;
+}
+
+.fotertext .buyYes, .fotertext .buyNo, .fotertext .name {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.fotertext .buyNo {
+  color: #ff3f6c;
+}
+.fotertext .buyNo h1 {
+  text-decoration: line-through;
+}
+.fotertext .buyYes {
+  color: #4caf50;
+}
+
+.items-info .owl-nav, .items-info .owl-dots {
+  display: none;
+}
+
+.items-info .owl-stage-outer {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.Productos .main-Productos .top .imag3, .Productos .main-Productos .bottom .imag3, .Productos .main-Productos .top .imag2, .Productos .main-Productos .bottom .imag2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Productos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.Productos .main-Productos {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Productos .main-Productos .top, .Productos .main-Productos .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Productos .main-Productos .top .imag1, .Productos .main-Productos .bottom .imag1 {
+  width: 50%;
+  border: 1px solid #e5e5e5;
+}
+.Productos .main-Productos .top .imag1 a, .Productos .main-Productos .bottom .imag1 a {
+  width: 100%;
+}
+.Productos .main-Productos .top .imag1 a img, .Productos .main-Productos .bottom .imag1 a img {
+  width: 100%;
+}
+.Productos .main-Productos .top .imag2, .Productos .main-Productos .bottom .imag2 {
+  width: 17%;
+  border: 1px solid #e5e5e5;
+}
+.Productos .main-Productos .top .imag2 a, .Productos .main-Productos .bottom .imag2 a {
+  width: 100%;
+}
+.Productos .main-Productos .top .imag2 a img, .Productos .main-Productos .bottom .imag2 a img {
+  width: 100%;
+}
+.Productos .main-Productos .top .imag3, .Productos .main-Productos .bottom .imag3 {
+  width: 17%;
+  border: 1px solid #e5e5e5;
+}
+.Productos .main-Productos .top .imag3 a, .Productos .main-Productos .bottom .imag3 a {
+  width: 100%;
+}
+.Productos .main-Productos .top .imag3 a img, .Productos .main-Productos .bottom .imag3 a img {
+  width: 100%;
+}
+
+.Sugerencias {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.Sugerencias .main-Sugerencias {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.Sugerencias .main-Sugerencias h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.Sugerencias .main-Sugerencias .one {
+  text-align: center;
+  margin-top: 1rem;
+}
+.Sugerencias .main-Sugerencias a {
+  color: black;
+  text-decoration: none;
+}
+.Sugerencias .main-Sugerencias a .two {
+  text-align: left;
+}
+
+.text {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.text .main-text {
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+}
+.text .main-text .main-right {
+  background-image: url(../image/WallpaperGram.IR_1553808002_82575.jpg);
+  background-size: cover;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.text .main-text .main-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.text .main-text .main-right .p1, .text .main-text .main-right .p2 {
+  text-align: center;
+  width: 99%;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.text .main-text .main-right a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.text .main-text .main-left {
+  display: flex;
+  width: 100%;
+  padding: 1rem 1rem 1rem 0rem;
+}
+.text .main-text .main-left .box-1 {
+  width: 96%;
+  border: 1px solid #dcdcdc;
+  margin-top: 0.5rem;
+  background-color: #fcfcfc;
+  border-radius: 0.5rem;
+}
+.text .main-text .main-left .box-1 .header2 {
+  padding: 1.5rem;
+}
+.text .main-text .main-left .box-1 .foter2 {
+  width: 91%;
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 2.5rem;
+  line-height: 1.5rem;
+}
+
+.top2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-info .infoimage a {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid #e5e5e5;
+  margin: auto;
+}
+
+.foter {
+  width: 100%;
+  background-color: #49484b;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.foter .foter-main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foter .foter-main .foter-box1 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  color: white;
+  line-height: 1.3rem;
+}
+.foter .foter-main .foter-box1 h2 {
+  font-weight: bold;
+}
+.foter .foter-main .foter-box1 hr {
+  color: #9b9b9b;
+  width: 10rem;
+  display: flex;
+  margin-right: 0;
+}
+.foter .foter-main .foter-box1 p {
+  font-size: 0.8rem;
+}
+
+.login {
+  width: 100%;
+  position: absolute;
+  top: 15rem;
+  right: 34rem;
+  display: none;
+}
+.login .mainlogin {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.2rem;
+}
+.login .mainlogin .headerlogin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login .mainlogin .headerlogin h2 {
+  font-size: 1.3rem;
+}
+.login .mainlogin .headerlogin a {
+  color: black;
+}
+.login .mainlogin .us-pass-login label .user {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.login .mainlogin .us-pass-login label .user i {
+  margin-bottom: 0.6rem;
+}
+.login .mainlogin .us-pass-login label .user p {
+  margin-right: 0.1rem;
+}
+.login .mainlogin .us-pass-login .user-input, .login .mainlogin .us-pass-login .password-input {
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border: none;
+  background-color: #d2ebf7;
+  color: black;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+.login .mainlogin .us-pass-login .pass {
+  display: flex;
+  align-items: center;
+}
+.login .mainlogin .us-pass-login .pass .bi.bi-key-fill {
+  margin-bottom: 0.1rem;
+}
+.login .mainlogin .us-pass-login .pass p {
+  margin-right: 0.1rem;
+}
+.login .mainlogin .insite {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
+}
+.login .mainlogin .insite .a-one {
+  color: white;
+  background-color: #4caf50;
+  padding: 0.8rem 3rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.login .mainlogin .insite .a-two {
+  color: black;
+}
+
+.draopdown {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  top: 2.6rem;
+  width: 50%;
+}
+.draopdown .dropdown-content li form {
+  width: 100%;
+}
+.draopdown .dropdown-content li form .draopdown-content-search {
+  width: 99%;
+  background-color: #e8e8e8;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.067rem;
+  font-family: inherit;
+}
+.draopdown ul .divider {
+  padding: 0.4rem 0.4rem 0.6rem 0.4rem;
+  font-size: small;
+}
+.draopdown ul li {
+  display: flex;
+  align-items: center;
+}
+.draopdown ul li a {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  border-bottom: 1.5px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.draopdown ul li a p {
+  margin-top: 0.2rem;
+}
+.draopdown ul li a i {
+  margin-bottom: 0.2rem;
+  transition: 100ms;
+}
+.draopdown ul li a:hover {
+  color: #3498db;
+}
+.draopdown ul li a:hover ~ a i ::before {
+  margin-right: 1rem;
+}
+
+.activ-hover-menue {
+  box-shadow: inset -2px 0 0 #3498db;
+}
+
+body {
+  font-family: vazir;
+}
+
+/*# sourceMappingURL=style.css.map */

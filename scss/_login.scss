@@ -1,0 +1,106 @@
+
+
+.login {
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 15rem;
+    right: 34rem;
+    display: none;
+
+    .mainlogin {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 1rem;
+        border: 1px solid #dbdbdb;
+        border-radius: .2rem;
+
+        .headerlogin {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            a {
+                color: black;
+            }
+        }
+
+        .us-pass-login {
+
+            label {
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 1rem;
+
+                    i {
+                        margin-bottom: 0.6rem;
+                    }
+
+                    p {
+                        margin-right: .1rem;
+                    }
+                }
+            }
+
+            .user-input , .password-input {
+                width: 100%;
+                padding-top: 0.8rem;
+                padding-bottom: .8rem;
+                border: none;
+                background-color: #d2ebf7;
+                color: black;
+                margin-bottom: 2rem;
+                border-radius: .3rem;
+            }
+
+
+            .pass {
+                display: flex;
+                align-items: center;
+
+                .bi.bi-key-fill {
+                    margin-bottom: .1rem;
+                }
+
+                p {
+                    margin-right: .1rem;
+                }
+            }
+        }
+
+        
+        .insite {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+            align-items: center;
+
+            .a-one {
+                color: white;
+                background-color: #4caf50;
+                padding: .8rem 3rem;
+                border-radius: .2rem;
+                text-decoration: none;
+                font-size: 1.1rem;
+            }
+
+            .a-two {
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+

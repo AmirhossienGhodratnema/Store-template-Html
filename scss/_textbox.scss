@@ -1,0 +1,88 @@
+
+.text {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .main-text {
+        width: 97%;
+        display: flex;
+        flex-direction: row;
+        
+        .main-right {
+            background-image: url(../image/WallpaperGram.IR_1553808002_82575.jpg);
+            background-size: cover;
+            opacity: 0.7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem;
+            border-radius: .5rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .p1 , .p2{
+                text-align: center;
+                width: 99%;
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            a {
+                width: 100%;
+                text-decoration: none;
+                color: black;
+            }
+
+
+        }
+
+        .main-left {
+            display: flex;
+            width: 100%;
+            padding: 1rem 1rem 1rem 0rem;
+
+            .box-1 {
+                width: 96%;
+                border: 1px solid #dcdcdc;
+                margin-top: .5rem;
+                background-color: #fcfcfc;
+                border-radius: .5rem;
+
+                .header2 {
+                    padding: 1.5rem;
+                    
+                }
+                .foter2 {
+                    width: 91%;
+                    text-align: justify;
+                    margin: auto;
+                    padding-bottom: 2.5rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+.top2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-info .infoimage a {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid #e5e5e5;
+    margin: auto;
+}

@@ -1,0 +1,41 @@
+
+
+
+.foter {
+    width: 100%;
+    background-color: #49484b;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .foter-main {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .foter-box1 {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            color: white;
+            line-height: 1.3rem;
+
+            h2 {
+               font-weight: bold;
+            }
+
+            hr {
+                color: #9b9b9b;
+                width: 10rem;
+                display: flex;
+                margin-right: 0;
+            }
+            
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}

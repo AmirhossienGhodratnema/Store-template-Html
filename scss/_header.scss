@@ -1,0 +1,233 @@
+%border {
+    border-radius: .4rem;
+}
+
+// Header Navigation
+.navigation {
+    background-color: #1e212d;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-r ul  , .nav-l ul{
+        display: flex;
+
+        li {
+            padding: 1em;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: 200ms;
+
+            }
+            a:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+// Activation Class
+.activ {
+    background-color: #333333;
+    padding: 1rem;
+}
+
+// Style Serchebar , Menue And Buy
+.MenueAndSerche {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .M-Serch {
+        display: flex;
+        position: relative;
+
+        .menue {
+            border-radius: .2rem;
+            background-color: #0095da;
+            display: flex;
+            align-items: center;
+            // padding: 0.5rem .5rem .5rem .8rem;
+
+            i {
+                display: flex;
+                font-size: 1.2rem;
+                padding-right: .4rem;
+            }
+
+            a{
+                padding: .7rem 0rem .7rem .9rem;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .serchbar {
+            display: flex;
+            margin-right: 1rem;
+
+            form {
+                display: flex;
+
+                input {
+                    width: 16rem;
+                    background-color: #f3f3f3;
+                    border: none;
+                    outline: none;
+                    padding-right: 1rem;
+                    border-bottom-right-radius: .2rem;
+                }
+                .search-click {
+                    background-color: #a5a5a5;
+                    padding: 0rem;
+                    width: 2.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        margin-bottom: 0.2rem;
+
+                        i{
+                            color: #f3f3f3;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    // Kye Buy
+    .Buy {
+        display: flex;
+        background-color: #4caf50;
+        align-items: center;
+        border-radius: .2rem;
+
+        .icon-buy i {
+            opacity: 0.3;
+            background-color: white;
+            padding: .4rem .7rem .7rem .7rem;
+            margin-left: .5rem;
+        }
+
+        .Buy-number {
+            background-color: white;
+            border-radius: 50%;
+            width: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 .5rem;
+            padding-top: .1rem;
+        }
+    }
+}
+
+// Slider
+.slider {
+    background-image: url(../image/FULL-HD-NATURE-PHO2TOS-1.jpg);
+    height: 25rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+    
+    .slider-main {
+
+
+        .button {
+            display: flex;
+            margin-right: 10rem;
+
+            
+            a {
+                padding: .7rem 1rem;
+                background-color: #038a6f;
+                color: white;
+                text-decoration: none;
+                @extend %border;
+            }
+        }
+
+        .title-slider {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 10rem;
+            background-color: #038a6f;
+            padding: 1rem;
+            margin-top: 0.7rem;
+            color: white;
+            @extend %border;
+
+            .text-titele {
+                margin-left: 5rem;
+            }
+        }
+    }
+}
+.owl-stage {
+    display: flex;
+}
+
+.owl-nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .owl-prev , .owl-next{
+        background-color: white;
+        border: none;
+        font-size: 1.5rem;
+        margin-right: .2rem;
+    }
+
+
+}
+.owl-dots {
+    display: flex;
+    justify-content: center;
+
+    .owl-dot {
+        background-color: #ececec;
+        border: none;
+        padding: .3rem;
+        border-radius: 1rem;
+        margin-right: .3rem;
+    }
+
+}
+
+
+.slider-ss {
+    position: relative;
+
+    .owl-nav  {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 49%;
+        opacity: 0.5;
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 3.2rem;
+        right: 49%;
+        opacity: 0.5;
+
+        .active {
+            background-color: rgb(105, 105, 105);
+        }
+    }
+}
+
+.slider-ss {
+    overflow: hidden;
+}
